@@ -154,19 +154,19 @@ fi
 # && = operador lógico AND, { } = agrupa comandos em blocos, [ ] = testa uma expressão, retornando 
 # 0 ou 1, -ne = é diferente (NotEqual)
 echo -n "Verificando as dependências do LAMP-Server, aguarde... "
-	for name in $LAMPDEP
-	do
-  		[[ $(dpkg -s $name 2> /dev/null) ]] || { 
-              echo -en "\n\nO software: $name precisa ser instalado. \nUse o comando 'apt install $name'\n";
-              deps=1; 
-              }
-	done
-		[[ $deps -ne 1 ]] && echo "Dependências.: OK" || { 
-            echo -en "\nInstale as dependências acima e execute novamente este script\n";
-			echo -en "Recomendo utilizar o script: 03-dns.sh para resolver as dependências."
-            exit 1; 
-            }
-		sleep 5
+	##for name in $LAMPDEP
+	#3do
+  	#	[[ $(dpkg -s $name 2> /dev/null) ]] || { 
+    #          echo -en "\n\nO software: $name precisa ser instalado. \nUse o comando 'apt install $name'\n";
+    #          deps=1; 
+    #          }
+	#done
+	#	[[ $deps -ne 1 ]] && echo "Dependências.: OK" || { 
+     #       echo -en "\nInstale as dependências acima e execute novamente este script\n";
+		#	echo -en "Recomendo utilizar o script: 03-dns.sh para resolver as dependências."
+         #   exit 1; 
+         #   }
+		#sleep 5
 #
 # Verificando se o script já foi executado mais de 1 (uma) vez nesse servidor
 # OBSERVAÇÃO IMPORTANTE: OS SCRIPTS FORAM PROJETADOS PARA SEREM EXECUTADOS APENAS 1 (UMA) VEZ
