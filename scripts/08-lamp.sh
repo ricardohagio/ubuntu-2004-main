@@ -469,7 +469,7 @@ sleep 5
 echo -e "Editando o arquivo de configuração awstats.pti.intra.conf, pressione <Enter> para continuar."
 	# opção do comando read: -s (Do not echo keystrokes)
 	read -s
-	vim /etc/awstats/awstats.pti.intra.conf
+	vim /etc/awstats/awstats.autlog.net
 echo -e "Arquivo editado com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
