@@ -318,7 +318,7 @@ echo -e "Atualizando os arquivos de configuração do Apache2 e do PHP, aguarde.
 	cp -v conf/lamp/000-default.conf /etc/apache2/sites-available/ &>> $LOG
 	cp -v conf/lamp/charset.conf /etc/apache2/conf-available/ &>> $LOG
 	cp -v conf/lamp/php.ini /etc/php/7.4/apache2/ &>> $LOG
-	cp -v conf/lamp/awstats.pti.intra.conf /etc/awstats/ &>> $LOG
+	cp -v conf/lamp/awstats.autlog.net.conf /etc/awstats/ &>> $LOG
 	cp -v conf/lamp/{awstats,awstatsupdate-cron} /etc/cron.d/ &>> $LOG
 echo -e "Arquivos atualizados com sucesso!!!, continuando com o script...\n"
 sleep 5
